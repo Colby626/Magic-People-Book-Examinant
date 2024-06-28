@@ -21,13 +21,13 @@ SET time_zone = "+00:00";
 -- Database: `the-mortal-tome`
 --
 
--- --------------------------------------------------------
+CREATE Database `the-mortal-tome`;
 
 --
 -- Table structure for table `people`
 --
 
-CREATE TABLE `people` (
+CREATE TABLE `the-mortal-tome`.`people` (
   `Name` varchar(255) NOT NULL,
   `Profession` text NOT NULL,
   `Skill` int(11) NOT NULL,
@@ -40,7 +40,7 @@ CREATE TABLE `people` (
 -- Dumping data for table `people`
 --
 
-INSERT INTO `people` (`Name`, `Profession`, `Skill`, `Workplace`, `City`, `Faction`) VALUES
+INSERT INTO `the-mortal-tome`.`people` (`Name`, `Profession`, `Skill`, `Workplace`, `City`, `Faction`) VALUES
 ('Colby Thompson', 'Scripe Of The Magic Book', 10, '4th Dimensional Computer', 'Magnolia', 'Database Creator');
 
 --
@@ -50,7 +50,7 @@ INSERT INTO `people` (`Name`, `Profession`, `Skill`, `Workplace`, `City`, `Facti
 --
 -- Indexes for table `people`
 --
-ALTER TABLE `people`
+ALTER TABLE `the-mortal-tome`.`people`
   ADD PRIMARY KEY (`Name`);
 COMMIT;
 
